@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navegador {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navegador img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 3000px;
+}
+.navegador ul {
+  list-style: none;
+  display: flex;
+}
+.navegador ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+}
+.navegador .fa-bars {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navegador .fa-bars {
+    display: block;
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+    order: -1;
+  }
+  .navegador .fa-bars:hover + ul {
+    left: 0;
+  }
+  .navegador {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navegador ul {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    transition: 0.5s;
+  }
+  .navegador ul li a {
+    color: rgb(0, 0, 0);
+  }
+  .navegador ul:hover {
+    left: 0;
+  }
+}
+.encabezado {
+  background-image: url(../multimedia/imagenes/fotoencabezado.jpeg);
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  text-align: center;
+  object-fit: cover;
+}
+.encabezado h1 {
+  font-size: 100px;
+  color: black;
+  text-shadow: 4px 3px 0 #7A7A7A, -9px -13px 5px rgba(222, 222, 222, 0.49);
+}
+
+@media (max-width: 380px) {
+  .encabezado {
+    background-image: url(../multimedia/imagenes/fotoencabezado.jpeg);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    text-align: center;
+    object-fit: cover;
+  }
+  .encabezado h1 {
+    font-size: 50px;
+    color: black;
+    text-shadow: 4px 3px 0 #7A7A7A, -9px -13px 5px rgba(222, 222, 222, 0.49);
+  }
+}
+.producto {
+  width: 270px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.productos img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.productos h5 {
+  font-size: 20px;
+}
+.productos button {
+  background-color: black;
+  color: white;
+  padding: 10px 25px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 580px) {
+  .producto {
+    width: 180px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .productos img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .productos h5 {
+    font-size: 15px;
+  }
+  .productos button {
+    width: 130px;
+    background-color: black;
+    color: white;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .producto {
+    width: 150px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .productos img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .productos h5 {
+    font-size: 11px;
+  }
+  .productos p {
+    font-size: 10px;
+  }
+  .productos button {
+    width: 100px;
+    height: 20px;
+    background-color: black;
+    color: white;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 6px;
+  }
+}
+.form-registro {
+  border: 5px solid black;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 576px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+.form-registro input {
+  width: 100%;
+  border-bottom: 2px solid black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .form-registro {
+    border: 5px solid black;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  .form-registro input {
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+  }
+}
+@media (max-width: 481px) {
+  .form-registro {
+    width: 350px;
+  }
+}
+.grid-padre {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-areas: "img1  img2 img2" "img1  img2 img2" "img4  img4 img4";
+}
+
+.img1 {
+  grid-area: img1;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.img4 {
+  grid-area: img4;
+}
+
+.grid-padre img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.encuentranos {
+  height: 50px;
+  margin: 100px 50px;
+  padding: 50px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  font-weight: normal;
+}
+.encuentranos h2 {
+  margin: 10px;
+}
+
+@media (max-width: 475px) {
+  .encuentranos {
+    height: 50px;
+    margin: 10px 100px;
+    padding: 50px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-weight: normal;
+  }
+  .encuentranos h2 {
+    margin: 20px;
+  }
+}
+@media (max-width: 475px) {
+  .encuentranos {
+    height: 50px;
+    margin: 10px 10px 250px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-weight: normal;
+  }
+  .encuentranos h6 {
+    margin: 20px;
+  }
+  .contactus iframe {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.mapa {
+  width: 500px;
+  height: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjetafooter {
+  width: 90%;
+  height: 100%;
+  padding: 10px;
+  margin: 50px 50px;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.tarjetafooter img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+@media (max-width: 900px) {
+  .tarjetafooter {
+    width: 300px;
+    height: 500px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .tarjetafooter img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 9px;
+  }
+  .tarjeta-footer {
+    padding: 20px;
+  }
+}
+.pie-de-pagina {
+  width: 100%;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: rgb(253, 252, 252);
+  color: black;
+  display: grid;
+  justify-content: center;
+}
+.pie-de-pagina .info {
+  width: 300px;
+  padding: 10px;
+}
+.pie-de-pagina .info-contacto {
+  width: 300px;
+  text-align: center;
+}
+.pie-de-pagina .info-redes {
+  font-size: 40px;
+  width: 300px;
+  text-align: center;
+}
+.pie-de-pagina ul {
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.pie-de-pagina ul li a {
+  text-decoration: none;
+  color: rgb(78, 76, 76);
+  display: block;
+}
+.pie-de-pagina .medios-de-pago img {
+  /*width: 500px;*/
+  height: 40px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.whatsapp {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: green;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  box-shadow: 5px 5px 18px 9px #000000;
+}
+.whatsapp i {
+  font-size: 48px;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .whatsapp {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right: 75px;
+    box-shadow: 5px 5px 18px 9px #000000;
+  }
+  .whatsapp i {
+    font-size: 40px;
+    color: white;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,39 @@
+.pie-de-pagina{
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: rgb(253, 252, 252);
+    color: black;
+    display: grid;
+    justify-content: center;
+    .info{
+        width: 300px;
+        padding: 10px;
+    }
+    .info-contacto{
+        width: 300px;
+        text-align: center;
+    }
+    .info-redes{
+        font-size: 40px;
+        width: 300px;
+        text-align: center;
+    }
+    ul{
+        padding: 10px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        li a{
+            text-decoration: none;
+            color: rgb(78, 76, 76);
+            display: block;
+        }
+    }
+    .medios-de-pago img{
+        /*width: 500px;*/
+        height: 40px;
+        object-fit: cover;
+        padding: 10px;
+    }
+}

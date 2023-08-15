@@ -1,0 +1,47 @@
+.form-registro{
+    border: 5px solid black;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 576px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    input{
+        width: 100%;
+        border-bottom: 2px solid black;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 20px; 
+        display: flex;
+        text-align: center;
+    }
+}
+@media(max-width:900px){
+    .form-registro{
+        border: 5px solid black;
+        margin: 10px auto;
+        padding: 20px;
+        border-radius: 5px;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        input{
+        width: 100%;
+        border-bottom: 2px solid black;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 20px; 
+        display: flex;
+        text-align: center;
+        }
+    }
+}
+@media(max-width:481px){
+    .form-registro{
+        width: 350px;
+    }    
+}

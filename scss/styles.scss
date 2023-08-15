@@ -1,0 +1,43 @@
+@import "reset";
+@import "variables";
+@import "navegador";
+
+.encabezado{
+    background-image: url(../multimedia/imagenes/fotoencabezado.jpeg);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    text-align: center;
+    object-fit: cover;
+    h1 {
+    font-size: 100px;
+    color: black;
+    text-shadow: 4px 3px 0 #7A7A7A, -9px -13px 5px rgba(222,222,222,0.49);
+    }
+
+}
+@media(max-width:380px){
+    .encabezado{
+        background-image: url(../multimedia/imagenes/fotoencabezado.jpeg);
+        width: 100%;
+        height: 450px;
+        background-size: cover;
+        text-align: center;
+        object-fit: cover;
+        h1 {
+        font-size: 50px;
+        color: black;
+        text-shadow: 4px 3px 0 #7A7A7A, -9px -13px 5px rgba(222,222,222,0.49);
+        }
+    
+    }
+    
+}
+
+@import "productos";
+@import "formularios";
+@import "grid-tarjeta";
+@import "encuentranos";
+@import "tarjetafooter";
+@import "footer";
+@import "whatsapp";

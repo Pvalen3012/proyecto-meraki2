@@ -102,11 +102,21 @@
   padding: 10px;
   border-radius: 5px;
 }
+.producto .producto:hover {
+  background-color: rgb(218, 190, 236);
+  width: 350px;
+}
 
 .productos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.productos .producto:hover {
+  background-color: rgb(218, 190, 236);
+  width: 350px;
 }
 .productos img {
   width: 100%;
@@ -137,6 +147,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    cursor: pointer;
+    transition: 0.8s;
+  }
+  .productos .producto:hover {
+    background-color: rgb(218, 190, 236);
+    width: 220px;
   }
   .productos img {
     width: 100%;

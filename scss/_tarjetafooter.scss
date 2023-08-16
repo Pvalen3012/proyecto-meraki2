@@ -36,3 +36,25 @@
         padding: 20px;
     }
 }
+@media(max-width:300px){
+    .tarjetafooter{
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+        margin: 20px auto;
+        background-color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        img{
+            height: 30px;
+            width: 30px;
+            object-fit: cover;
+            border-radius: 9px;
+        }
+    }
+    .tarjeta-footer{
+        padding: 20px;
+    }
+}

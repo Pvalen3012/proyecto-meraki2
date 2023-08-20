@@ -5,20 +5,53 @@
 }
 
 .navegador {
-  background-color: black;
+  background-color: #A1A5C7;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .navegador img {
-  width: 64px;
-  height: 64px;
+  width: 50px;
+  height: 50px;
   object-fit: cover;
   border-radius: 3000px;
+}
+.navegador a {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+.navegador .TITULO {
+  font-size: 48px;
+  padding: 10px;
+  text-shadow: 4px 3px 0 #8285A1;
+  color: #535566;
 }
 .navegador ul {
   list-style: none;
   display: flex;
+}
+.navegador ul .fa-pipe {
+  width: 0.5px;
+  height: 35px;
+  display: block;
+  background-color: #535566;
+  margin-right: 15px;
+  margin-left: 5px;
+}
+.navegador ul .fa-user {
+  display: block;
+  font-size: 25px;
+  padding: 5px 15px 5px 0px;
+  color: #535566;
+  transition: 0, 5;
+}
+.navegador ul .fa-shopping-bag {
+  display: block;
+  font-size: 25px;
+  padding: 5px 15px 5px 5px;
+  color: #535566;
+  transition: 0, 5;
 }
 .navegador ul li a {
   color: white;
@@ -66,6 +99,26 @@
     left: 0;
   }
 }
+.compras {
+  color: #535566;
+  font-size: 40px;
+  padding: 20px;
+  margin: 0px;
+  background-color: #C0C5ED;
+  border-radius: 20px;
+  margin: 15px;
+}
+.compras h1 {
+  font-size: 40px;
+  padding: 20px;
+  margin: 0px;
+  color: black;
+}
+.compras p {
+  padding: 20px;
+  color: #535566;
+}
+
 .encabezado {
   background-image: url(../multimedia/imagenes/fotoencabezado.jpeg);
   width: 100%;

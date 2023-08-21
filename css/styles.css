@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 * {
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,6 +16,7 @@
 .navegador img {
   width: 50px;
   height: 50px;
+  margin: 5px 10px;
   object-fit: cover;
   border-radius: 3000px;
 }
@@ -24,12 +28,12 @@
 .navegador .TITULO {
   font-size: 48px;
   padding: 10px;
-  text-shadow: 4px 3px 0 #8285A1;
   color: #535566;
 }
 .navegador ul {
   list-style: none;
   display: flex;
+  margin: 10px;
 }
 .navegador ul .fa-pipe {
   width: 0.5px;
@@ -59,6 +63,9 @@
   display: block;
   padding: 10px 15px;
 }
+.navegador ul li .linkes {
+  display: none;
+}
 .navegador .fa-bars {
   display: none;
 }
@@ -75,7 +82,6 @@
     left: 0;
   }
   .navegador {
-    background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,9 +97,30 @@
     align-items: center;
     padding-top: 50px;
     transition: 0.5s;
+    z-index: 2;
+  }
+  .navegador ul .fa-pipe {
+    display: none;
+  }
+  .navegador ul .fa-user {
+    display: none;
   }
   .navegador ul li a {
     color: rgb(0, 0, 0);
+  }
+  .navegador ul li .linkes {
+    display: block;
+    color: #535566;
+  }
+  .navegador a h1 {
+    display: none;
+  }
+  .navegador img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 3000px;
+    order: 1;
   }
   .navegador ul:hover {
     left: 0;
@@ -119,50 +146,20 @@
   color: #535566;
 }
 
-.encabezado {
-  background-image: url(../multimedia/imagenes/fotoencabezado.jpeg);
+.carousel-item img {
   width: 100%;
-  height: 450px;
-  background-size: cover;
-  text-align: center;
+  height: 750px;
   object-fit: cover;
 }
-.encabezado h1 {
-  font-size: 100px;
-  color: black;
-  text-shadow: 4px 3px 0 #7A7A7A, -9px -13px 5px rgba(222, 222, 222, 0.49);
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: auto;
+  }
 }
 
-@media (max-width: 380px) {
-  .encabezado {
-    background-image: url(../multimedia/imagenes/fotoencabezado.jpeg);
-    width: 100%;
-    height: 450px;
-    background-size: cover;
-    text-align: center;
-    object-fit: cover;
-  }
-  .encabezado h1 {
-    font-size: 40px;
-    color: black;
-    text-shadow: 4px 3px 0 #7A7A7A, -9px -13px 5px rgba(222, 222, 222, 0.49);
-  }
-}
 @media (max-width: 157px) {
-  .encabezado {
-    background-image: url(../multimedia/imagenes/fotoencabezado.jpeg);
-    width: 100%;
-    height: 450px;
-    background-size: cover;
-    text-align: center;
-    object-fit: cover;
-  }
-  .encabezado h1 {
-    font-size: 20px;
-    color: black;
-    text-shadow: 4px 3px 0 #7A7A7A, -9px -13px 5px rgba(222, 222, 222, 0.49);
-  }
   .nueva-coleccion {
+    font-family: "Concert One", cursive;
     font-size: 30px;
     text-align: center;
     text-decoration: none;
@@ -171,6 +168,7 @@
   }
 }
 .nueva-coleccion {
+  font-family: "Concert One", cursive;
   font-size: 40px;
   text-align: center;
   text-decoration: none;
@@ -180,10 +178,12 @@
 
 @media (max-width: 220px) {
   .nueva-coleccion {
+    font-family: "Concert One", cursive;
     font-size: 20px;
   }
 }
 .texto {
+  font-family: "Concert One", cursive;
   font-size: 30px;
   text-decoration: none;
   color: black;
@@ -192,11 +192,13 @@
 
 @media (max-width: 1000px) {
   .texto {
+    font-family: "Concert One", cursive;
     font-size: 20px;
   }
 }
 @media (max-width: 600px) {
   .texto {
+    font-family: "Concert One", cursive;
     font-size: 15px;
   }
 }
@@ -356,6 +358,12 @@
     width: 350px;
   }
 }
+@media (max-width: 300px) {
+  .form-registro {
+    width: 200px;
+    height: 300px;
+  }
+}
 .grid-padre {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -426,15 +434,40 @@
     margin: 20px;
   }
   .contactus iframe {
-    width: 300px;
+    width: 250px;
     height: 400px;
     display: flex;
     flex-direction: column;
+    margin: auto;
+  }
+}
+@media (max-width: 300px) {
+  .encuentranos {
+    height: 50px;
+    margin: 10px 10px 200px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: normal;
+  }
+  .encuentranos h6 {
+    margin: 20px;
+    font-size: 9px;
+  }
+  .encuentranos h2 {
+    font-size: 10px;
+  }
+  .contactus iframe {
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
   }
 }
 .mapa {
-  width: 500px;
-  height: 500px;
+  width: 480px;
+  height: 480px;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
@@ -504,7 +537,7 @@
   width: 100%;
   text-align: center;
   flex-wrap: wrap;
-  background-color: rgb(253, 252, 252);
+  background-color: #d4d7e9;
   color: black;
   display: grid;
   justify-content: center;

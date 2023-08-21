@@ -41,16 +41,42 @@
             }
     }
     .contactus iframe{
-        width: 300px;
+        width: 250px;
         height: 400px;
         display: flex;
         flex-direction: column;
+        margin: auto;
     }
     
 }
+@media(max-width:300px){
+    .encuentranos{
+        height: 50px;
+        margin: 10px 10px 200px; 
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        
+        font-weight: normal;
+        h6{
+            margin: 20px;
+            font-size: 9px;
+            }
+        h2{
+            font-size: 10px;
+        }    
+    }
+    .contactus iframe{
+        width: 150px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+}    
 .mapa{
-    width: 500px;
-    height: 500px;
+    width: 480px;
+    height: 480px;
     margin: 20px auto;
     display: flex;
     flex-direction: column;

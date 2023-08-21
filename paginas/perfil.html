@@ -13,21 +13,44 @@
 <body>
     <nav class="navegador">
         <img class="logo" src="../multimedia/imagenes/logo.jpg" alt="">
-        <a href="../index.html"><h1>MERAKI</h1></a>
+        <a href="../index.html">
+            <h1 class="TITULO">MERAKI</h1>
+        </a>
         <i class="fa-solid fa-bars"></i>
         <ul>
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="./shopping.html">shopping</a></li>
+            <li>
+                <a class="linkes" href="./perfil.html">Perfil</a>
+            </li>
             <i class="fa-thin fa-pipe"></i>
             <a href="./perfil.html"><i class="fa-solid fa-user"></i></a>
             <a href="./carrito-compras.html"><i class="fas fa-shopping-bag"></i></a> 
         </ul>
     </nav>
     
-    <header class="encabezado">
-        <div class="encabezado-info">
-            <h1>Meraki</h1>
-        </div>    
+    <header>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../multimedia/imagenes/coleccionbarbie.jpg" class="d-block w-100" alt="novedades">
+              </div>
+              <div class="carousel-item">
+                <img src="../multimedia/imagenes/fotoencabezado.jpeg" class="d-block w-100" alt="modelo-morado">
+              </div>
+              <div class="carousel-item">
+                <img src="../multimedia/imagenes/Banners_AUG_Remeras_Desk.png" class="d-block w-100" alt="moda-2000">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>   
     </header>
     <main>
         <div class="container">

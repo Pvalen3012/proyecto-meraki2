@@ -6,6 +6,7 @@
     img{
         width: 50px;
         height: 50px;
+        margin: 5px 10px;
         object-fit: cover;
         border-radius: 3000px;
     }
@@ -17,7 +18,7 @@
     .TITULO{
        font-size: 48px;
        padding: 10px;
-       text-shadow: 4px 3px 0 $casioscuro;
+       
        color: $oscuro;
        
 
@@ -25,6 +26,7 @@
     ul{
         list-style: none;
         display: flex;
+        margin: 10px;
         .fa-pipe{
             width: 0.5px;
             height: 35px;
@@ -55,6 +57,10 @@
             display: block;
             padding: 10px 15px; 
             
+            
+        }
+        li .linkes{
+            display: none;
         }
     } 
     .fa-bars{
@@ -75,7 +81,6 @@
         left: 0;
     }
     .navegador{
-        background-color: black;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -90,16 +95,42 @@
             align-items: center;
             padding-top: 50px;
             transition: 0.5s;
+            z-index: 2;
+            .fa-pipe{
+                display: none;
+            }
+            
+            .fa-user{
+                display: none;
+            }
             li a{
                 color: rgb(0, 0, 0);
                 
              }
+            li .linkes{
+                display: block;
+                color: $oscuro;
+            }
+            
         }
+        a h1{
+            display: none;
+        }
+        img{
+            width: 45px;
+            height: 45px;
+            object-fit: cover;
+            border-radius: 3000px;
+            order: 1;
+            
+        }
+
     
            
     }
     .navegador ul:hover{
         left: 0;
     }
+    
     
 }

@@ -52,22 +52,30 @@
             </button>
           </div>   
     </header>
-    <main>
-        <div class="container">
-         <h2>Iniciar Sesión</h2>
-          <form action="#">
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" class="form-control" id="email" placeholder="Ingrese email" name="email" required>
+    <main class="iniciar-sesion ">
+      <form class="form-inicio" action="">
+        <h2 class="titulo-pages">Iniciar sesión</h2>
+        <div class="form-datos">
+            <div class="datos">
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario" id="usuario" placeholder="Ingrese su usuario" required> 
             </div>
-              <div>
-              <label for="contraseña">Contrseña:</label>
-              <input type="contraseña" class="form-control" id="email" placeholder="Ingrese contraseña" name="contraseña" required>
-              </div>
-            <button type="submit" class="btn btn-outline-dark">Ingresar</button>
-          </form>
-          <a href="./registro.html">Registrarme</a>
+            <div class="datos">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña" required>
+            </div>
         </div>
+        <div class="check-recuerdame">
+            <label class="check" for="recuerdame">Recuerdame</label>
+            <input type="checkbox" name="acepto" id="recuerdame" value="recuerdarme" />
+        </div>
+        <button class="boton" type="submit">Continuar</button>
+        <div class="olvido-registro">
+            <a href="./perfil.html">¿Olvidaste tu contraseña?</a>
+            <a href="./registro.html">¿no tienes una cuenta? Registrarse</a>
+        </div>
+
+    </form>
     </main>
     <section class="tarjetafooter">
         <div class="tarjeta-footer">
@@ -94,7 +102,7 @@
             </ul> 
         </div>
         <div class="medios-de-pago">
-            <h2>medios de pago</h2>
+            <h3>medios de pago</h3>
             <img class="mediodepago" src="../multimedia/imagenes/medios-de-pago (1).png" alt="medios-de-pago">
         </div>
         <div class="info-contacto">

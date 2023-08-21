@@ -9,18 +9,29 @@
     .info{
         width: 300px;
         padding: 10px;
+        
     }
     .info-contacto{
-        width: 300px;
         text-align: center;
+        margin: 0px;
+        text-align: center;
+        h3{
+            font-size: 15px;
+        }
+        p{
+            font-size: 10px;
+        }
+        
+        
     }
     .info-redes{
-        font-size: 40px;
+        font-size: 30px;
         width: 300px;
         text-align: center;
     }
     ul{
-        padding: 10px;
+        padding: 10px 10px 3px;
+        margin: 0px ;
         list-style: none;
         display: flex;
         justify-content: center;
@@ -30,10 +41,79 @@
             display: block;
         }
     }
-    .medios-de-pago img{
-        /*width: 500px;*/
-        height: 40px;
-        object-fit: cover;
-        padding: 10px;
+    .medios-de-pago{ 
+        font-size: 15px;
+        
+    
+        img{
+            /*width: 500px;*/
+            height: 40px;
+            object-fit: cover;
+            padding: 10px;
+       }
+    }
+}
+@media(max-width:300px){
+    .pie-de-pagina{
+        width: 100%;
+        text-align: center;
+        flex-wrap: wrap;
+        background-color: #d4d7e9;
+        color: black;
+        display: grid;
+        justify-content: center;
+        .info{
+            width: 300px;
+            padding: 10px;
+            
+        }
+        .info-contacto{
+            text-align: center;
+            margin: 0px;
+            text-align: center;
+            h3{
+                font-size: 5px;
+                margin: 0px;
+            }
+            p{
+                font-size: 5px;
+                margin: 0px;
+            }
+            
+            
+        }
+        .info-redes{
+            font-size: 30px;
+            width: 300px;
+            text-align: center;
+        }
+        ul{
+            padding: 10px 10px 3px;
+            margin: 0px ;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            li a{
+                text-decoration: none;
+                color: rgb(78, 76, 76);
+                display: block;
+                font-size: 5px;
+            }
+        }
+        .medios-de-pago{ 
+            margin: 0px;
+            h3{
+                font-size: 10px;
+                margin: 0px;
+            }
+            
+        
+            img{
+                width: 100vw;
+                height: 40px;
+                margin: 0px;
+                padding: 10px;
+           }
+        }
     }
 }
